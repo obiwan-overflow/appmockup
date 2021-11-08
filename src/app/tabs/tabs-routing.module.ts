@@ -44,6 +44,10 @@ const routes: Routes = [
         loadChildren: () => import('../form/form.module').then(m => m.FormPageModule)
       },
       {
+        path: 'home/why',
+        loadChildren: () => import('../why/why.module').then(m => m.WhyPageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/home',
         pathMatch: 'full'

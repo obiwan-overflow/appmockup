@@ -8,7 +8,7 @@
 </ion-header>
 
 <ion-content>
-  <ion-grid>
+  <div class="tabs-header">
     <ion-row>
       <ion-col size="4" class="ion-text-center">
         <ion-text class="icon-banner">
@@ -16,7 +16,7 @@
           <p>แบบสอบถาม</p>
         </ion-text>
       </ion-col>
-      <ion-col size="4" class="ion-text-center">
+      <ion-col size="4" class="ion-text-center" routerLink="/tabs/report">
         <ion-text class="icon-banner">
           <ion-icon name="document-sharp"></ion-icon>
           <p>รายงาน</p>
@@ -29,11 +29,36 @@
         </ion-text>
       </ion-col>
     </ion-row>
+  </div>
+  <ion-grid>
     <ion-row>
       <ion-col size="12">
           <ion-text color="danger">
             <h4><b>สถานะการสำรวจ</b></h4>
           </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <div class="card-status">
+          <ion-icon name="document-text-sharp" color="danger"></ion-icon>
+          <h6>สังเกตุร้านค้า</h6>
+          <p>แล้วเสร็จ 0/100</p>
+        </div>
+      </ion-col>
+      <ion-col size="6">
+        <div class="card-status">
+          <ion-icon name="document-text-sharp" color="danger"></ion-icon>
+          <h6>สังเกตุสถานะที่สาธารณะ</h6>
+          <p>แล้วเสร็จ 0/100</p>
+        </div>
+      </ion-col>
+      <ion-col size="6">
+        <div class="card-status">
+          <ion-icon name="document-text-sharp" color="danger"></ion-icon>
+          <h6>สัมภาษณ์พฤติกรรมการสูบบุหรี่</h6>
+          <p>แล้วเสร็จ 0/100</p>
+        </div>
       </ion-col>
     </ion-row>
     <ion-row>
@@ -44,7 +69,7 @@
           </ion-text>
           <p>ลิสต์ปักขคณนาแฟร์ อัลไซเมอร์เวิร์กช็อป แบล็ก วิทย์คอนแท็ค มินท์ไทเฮา คอนโทรลแก๊สโซฮอล์โหลนแฟนตาซี ว้อยมาร์จิน โต๊ะจีนธุหร่ำไฟลท์แบคโฮเต๊ะ ฮองเฮาหยวนเลดี้โนติส พาสตาวิลเลจเอ๊าะมอคคาไมเกรน ปาสกาลราเม็งตัวเองปักขคณนาแคนยอน ทับซ้อนซีนธรรมาสะบึม ตัวเองนพมาศเกสต์เฮาส์บาลานซ์ คอร์รัปชัน เคลม﻿กรรมาชนเก๋ากี้จ๊อกกี้โมหจริต พอเพียงเรตเจี๊ยว</p>
           <div class="ion-text-end">
-            <a routerLink="/tabs/announce">อ่านเพิ่มเติม.</a>
+            <a routerLink="/tabs/home/why">อ่านเพิ่มเติม  ></a>
           </div>
         </div>
       </ion-col>
