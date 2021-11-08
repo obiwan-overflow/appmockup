@@ -32,6 +32,18 @@ const routes: Routes = [
         loadChildren: () => import('../announce-detail/announce-detail.module').then(m => m.AnnounceDetailPageModule)
       },
       {
+        path: 'report',
+        loadChildren: () => import('../report/report.module').then(m => m.ReportPageModule)
+      },
+      {
+        path: 'report/report-detail',
+        loadChildren: () => import('../report-detail/report-detail.module').then(m => m.ReportDetailPageModule)
+      },
+      {
+        path: 'form',
+        loadChildren: () => import('../form/form.module').then(m => m.FormPageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/home',
         pathMatch: 'full'

@@ -25,6 +25,18 @@ const routes: Routes = [
   {
     path: 'announce-detail',
     loadChildren: () => import('./announce-detail/announce-detail.module').then( m => m.AnnounceDetailPageModule)
+  },
+  {
+    path: 'report',
+    loadChildren: () => import('./report/report.module').then( m => m.ReportPageModule)
+  },
+  {
+    path: 'report-detail',
+    loadChildren: () => import('./report-detail/report-detail.module').then( m => m.ReportDetailPageModule)
+  },
+  {
+    path: 'form',
+    loadChildren: () => import('./form/form.module').then( m => m.FormPageModule)
   }
 ];
 @NgModule({

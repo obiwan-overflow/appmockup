@@ -2,7 +2,7 @@
   <ion-toolbar>
     <ion-title>หน้าหลัก</ion-title>
     <ion-buttons slot="start">
-      <ion-menu-button menu="main-menu"></ion-menu-button>
+      <ion-menu-button menu="main-menu" color="danger"></ion-menu-button>
     </ion-buttons>
   </ion-toolbar>
 </ion-header>
@@ -10,17 +10,50 @@
 <ion-content>
   <ion-grid>
     <ion-row>
+      <ion-col size="4" class="ion-text-center">
+        <ion-text class="icon-banner">
+          <ion-icon name="document-text-sharp"></ion-icon>
+          <p>แบบสอบถาม</p>
+        </ion-text>
+      </ion-col>
+      <ion-col size="4" class="ion-text-center">
+        <ion-text class="icon-banner">
+          <ion-icon name="document-sharp"></ion-icon>
+          <p>รายงาน</p>
+        </ion-text>
+      </ion-col>
+      <ion-col size="4" class="ion-text-center">
+        <ion-text class="icon-banner">
+          <ion-icon name="pie-chart-sharp"></ion-icon>
+          <p>สรุปผลสำรวจ</p>
+        </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row>
       <ion-col size="12">
-        <h3>ทำไมต้อง อปท. ต้องปลอดบุหรี่</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio autem a quidem reprehenderit consectetur porro commodi quo? Veniam, architecto perspiciatis. Quos aspernatur, possimus fuga consectetur aperiam veniam quo ipsam omnis!</p>
-        <div class="ion-text-end">
-          <p routerLink="/tabs/announce">อ่านเพิ่มเติม.</p>
+          <ion-text color="danger">
+            <h4><b>สถานะการสำรวจ</b></h4>
+          </ion-text>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <div class="content">
+          <ion-text color="danger">
+            <h4><b>ทำไมต้อง อปท. ต้องปลอดบุหรี่</b></h4>
+          </ion-text>
+          <p>ลิสต์ปักขคณนาแฟร์ อัลไซเมอร์เวิร์กช็อป แบล็ก วิทย์คอนแท็ค มินท์ไทเฮา คอนโทรลแก๊สโซฮอล์โหลนแฟนตาซี ว้อยมาร์จิน โต๊ะจีนธุหร่ำไฟลท์แบคโฮเต๊ะ ฮองเฮาหยวนเลดี้โนติส พาสตาวิลเลจเอ๊าะมอคคาไมเกรน ปาสกาลราเม็งตัวเองปักขคณนาแคนยอน ทับซ้อนซีนธรรมาสะบึม ตัวเองนพมาศเกสต์เฮาส์บาลานซ์ คอร์รัปชัน เคลม﻿กรรมาชนเก๋ากี้จ๊อกกี้โมหจริต พอเพียงเรตเจี๊ยว</p>
+          <div class="ion-text-end">
+            <a routerLink="/tabs/announce">อ่านเพิ่มเติม.</a>
+          </div>
         </div>
       </ion-col>
     </ion-row>
     <ion-row>
       <ion-col size="12">
-        <h3>ประกาศ</h3>
+        <ion-text color="danger">
+          <h3><b>ประกาศ</b></h3>
+        </ion-text>
       </ion-col>
     </ion-row>
   </ion-grid>
@@ -30,9 +63,8 @@
         <img src="assets/shapes.svg">
       </ion-avatar>
       <ion-label>
-        <h2>Poe</h2>
         <h3>New Ride</h3>
-        <p>I just upgraded my X-Wing. Next time...</p>
+        <p>เพรียวบาง เฉิ่มไลน์เกย์ กรุ๊ป เดโมโฮปดาวน์ดีพาร์ทเมนต์ พันธุวิศวกรรมแคร็กเกอร์ สามช่าแคร์เจไดพุทธภูมิบลูเบอร์รี รันเวย์โยโย่ฮิปฮอป ธรรมาภิบาลเกรย์อัลบัม</p>
       </ion-label>
     </ion-item>
 
@@ -41,9 +73,8 @@
         <img src="assets/shapes.svg">
       </ion-avatar>
       <ion-label>
-        <h2>Ben</h2>
         <h3>Move Along</h3>
-        <p>These aren't the droids you're looking for...</p>
+        <p>เพรียวบาง เฉิ่มไลน์เกย์ กรุ๊ป เดโมโฮปดาวน์ดีพาร์ทเมนต์ พันธุวิศวกรรมแคร็กเกอร์ สามช่าแคร์เจไดพุทธภูมิบลูเบอร์รี รันเวย์โยโย่ฮิปฮอป ธรรมาภิบาลเกรย์อัลบัม</p>
       </ion-label>
     </ion-item>
 
@@ -52,9 +83,8 @@
         <img src="assets/shapes.svg">
       </ion-avatar>
       <ion-label>
-        <h2>Leia</h2>
         <h3>You're My Only Hope</h3>
-        <p>I've placed information vital to the survival...</p>
+        <p>เพรียวบาง เฉิ่มไลน์เกย์ กรุ๊ป เดโมโฮปดาวน์ดีพาร์ทเมนต์ พันธุวิศวกรรมแคร็กเกอร์ สามช่าแคร์เจไดพุทธภูมิบลูเบอร์รี รันเวย์โยโย่ฮิปฮอป ธรรมาภิบาลเกรย์อัลบัม</p>
       </ion-label>
     </ion-item>
 
@@ -63,9 +93,8 @@
         <img src="assets/shapes.svg">
       </ion-avatar>
       <ion-label>
-        <h2>Yoda</h2>
         <h3>Size matters not</h3>
-        <p>Do or do not. There is no try...</p>
+        <p>เพรียวบาง เฉิ่มไลน์เกย์ กรุ๊ป เดโมโฮปดาวน์ดีพาร์ทเมนต์ พันธุวิศวกรรมแคร็กเกอร์ สามช่าแคร์เจไดพุทธภูมิบลูเบอร์รี รันเวย์โยโย่ฮิปฮอป ธรรมาภิบาลเกรย์อัลบัม</p>
       </ion-label>
     </ion-item>
   </ion-list>
