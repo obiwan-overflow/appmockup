@@ -40,6 +40,10 @@ const routes: Routes = [
   },  {
     path: 'why',
     loadChildren: () => import('./why/why.module').then( m => m.WhyPageModule)
+  },
+  {
+    path: 'form-step1',
+    loadChildren: () => import('./form-step1/form-step1.module').then( m => m.FormStep1PageModule)
   }
 
 ];
