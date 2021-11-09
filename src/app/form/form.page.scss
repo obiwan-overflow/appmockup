@@ -18,3 +18,16 @@ ion-label {
         color: green;
     }
 }
+
+.profile {
+    padding: 10px 0;
+    background-color: #eb445a;
+    
+    .profile-content {
+        p {
+            margin-bottom: 0;
+            margin-top: 0;
+            color: #fff;
+        }
+    }
+}
