@@ -26,13 +26,13 @@
 @import "~@ionic/angular/css/flex-utils.css";
 
 @font-face {   
-    font-family: 'Kanit';    
-    src: url('assets/fonts/kanit/Kanit-ExtraLight.ttf');
+    font-family: 'sarabun';    
+    src: url('assets/fonts/Sarabun/Sarabun-Medium.ttf');
 }
 ion-content,ion-title { 
-    font-family:Kanit !important;
+    font-family:sarabun !important;
 }
 ion-label {
-    font-family: Kanit !important;
+    font-family:sarabun !important;
 }
-  
+

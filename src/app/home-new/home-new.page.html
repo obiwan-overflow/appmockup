@@ -1,44 +1,61 @@
 <ion-content>
   <div id="header-profile">
-    <img src="assets/shapes.svg">
-    <p>นาย สมชาย ใจดี</p>
+    <ion-row>
+      <ion-col size="2">
+        <img src="assets/images/user.png">
+      </ion-col>
+      <ion-col size="10">
+        <p>นาย สมชาย ใจดี</p>
+      </ion-col>
+    </ion-row>
   </div>
 
   <div class="slide">
-    <img src="https://www.fillmurray.com/640/360" alt="">
+    <img src="assets/images/banner/banner.png" alt="">
+  </div>
+
+  <div class="noti">
+    <ion-icon name="megaphone-outline"></ion-icon>
+    <p>ด็อกเตอร์บิลอุปสงค์ซะฟลอร์ เลสเบี้ยนผู้นำหงวนอพาร์ทเมนท์ฮาโลวีน ปาร์ตี้ตะหงิด โหงวเฮ้ง</p>
   </div>
 
   <ion-grid>
     <ion-row>
-      <ion-col size="12">
-        <ion-text>
-          <p><ion-icon name="megaphone-outline"></ion-icon> ด็อกเตอร์บิลอุปสงค์ซะฟลอร์ เลสเบี้ยนผู้นำหงวนอพาร์ทเมนท์ฮาโลวีน ปาร์ตี้ตะหงิด โหงวเฮ้ง</p>
-        </ion-text>
-      </ion-col>
-    </ion-row>
-    <ion-row>
-      <ion-col size="4">
-        <div class="menu">
+      <ion-col size="6">
+        <div class="menu" routerLink="home-new">
           <ion-icon name="home-outline"></ion-icon>
           <p>หน้าหลัก</p>
         </div>
       </ion-col>
-      <ion-col size="4">
-        <div class="menu">
+      <ion-col size="6">
+        <div class="menu" routerLink="/tabs/form">
           <ion-icon name="document-text-outline"></ion-icon>
           <p>แบบสอบถาม</p>
         </div>
       </ion-col>
-      <ion-col size="4">
-        <div class="menu">
+      <ion-col size="6">
+        <div class="menu" routerLink="/tabs/report">
           <ion-icon name="pie-chart-outline"></ion-icon>
           <p>รายงาน</p>
         </div>
       </ion-col>
-      <ion-col size="4">
-        <div class="menu">
+      <ion-col size="6">
+        <div class="menu" routerLink="/tabs/announce">
           <ion-icon name="newspaper-outline"></ion-icon>
           <p>ข่าวสาร</p>
+        </div>
+      </ion-col>
+      <ion-col size="6">
+        <div class="menu" routerLink="/tabs/announce">
+          <ion-icon name="mail-outline"></ion-icon>
+          <p>ติดต่อเรา</p>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="12">
+        <div class="copy-right">
+         <p>มูลนิธิรณรงค์เพื่อการไม่สูบบุหรี่ <br> 36/2 ซอยประดิพัทธ์ 10 ถนนประดิพัทธ์ แขวงพญาไท เขตพญาไท <br> กรุงเทพฯ 10400</p> 
         </div>
       </ion-col>
     </ion-row>
