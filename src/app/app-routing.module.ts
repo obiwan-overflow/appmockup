@@ -37,13 +37,18 @@ const routes: Routes = [
   {
     path: 'form',
     loadChildren: () => import('./form/form.module').then( m => m.FormPageModule)
-  },  {
+  },
+  {
     path: 'why',
     loadChildren: () => import('./why/why.module').then( m => m.WhyPageModule)
   },
   {
     path: 'form-step1',
     loadChildren: () => import('./form-step1/form-step1.module').then( m => m.FormStep1PageModule)
+  },
+  {
+    path: 'home-new',
+    loadChildren: () => import('./home-new/home-new.module').then( m => m.HomeNewPageModule)
   }
 
 ];
