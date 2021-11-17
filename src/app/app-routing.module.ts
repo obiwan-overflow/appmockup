@@ -49,7 +49,11 @@ const routes: Routes = [
   {
     path: 'home-new',
     loadChildren: () => import('./home-new/home-new.module').then( m => m.HomeNewPageModule)
+  },  {
+    path: 'form-lists',
+    loadChildren: () => import('./form-lists/form-lists.module').then( m => m.FormListsPageModule)
   }
+
 
 ];
 @NgModule({
