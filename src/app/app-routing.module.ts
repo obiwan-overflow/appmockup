@@ -69,7 +69,11 @@ const routes: Routes = [
   {
     path: 'news-detail',
     loadChildren: () => import('./news-detail/news-detail.module').then( m => m.NewsDetailPageModule)
+  },  {
+    path: 'contact',
+    loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
   }
+
 
 
 ];

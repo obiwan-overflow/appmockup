@@ -68,6 +68,10 @@ const routes: Routes = [
         loadChildren: () => import('../news-detail/news-detail.module').then(m => m.NewsDetailPageModule)
       },
       {
+        path: 'contact',
+        loadChildren: () => import('../contact/contact.module').then(m => m.ContactPageModule)
+      },
+      {
         path: '',
         redirectTo: '/tabs/announce',
         pathMatch: 'full'
