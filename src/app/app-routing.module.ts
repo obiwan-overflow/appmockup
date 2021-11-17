@@ -39,7 +39,7 @@ const routes: Routes = [
     loadChildren: () => import('./form/form.module').then( m => m.FormPageModule)
   },
   {
-    path: 'why',
+    path: 'home-new/why',
     loadChildren: () => import('./why/why.module').then( m => m.WhyPageModule)
   },
   {
@@ -49,9 +49,26 @@ const routes: Routes = [
   {
     path: 'home-new',
     loadChildren: () => import('./home-new/home-new.module').then( m => m.HomeNewPageModule)
-  },  {
+  },
+  {
     path: 'form-lists',
     loadChildren: () => import('./form-lists/form-lists.module').then( m => m.FormListsPageModule)
+  },
+  {
+    path: 'forgot-password',
+    loadChildren: () => import('./forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
+  },
+  {
+    path: 're-password',
+    loadChildren: () => import('./re-password/re-password.module').then( m => m.RePasswordPageModule)
+  },
+  {
+    path: 'news',
+    loadChildren: () => import('./news/news.module').then( m => m.NewsPageModule)
+  },
+  {
+    path: 'news-detail',
+    loadChildren: () => import('./news-detail/news-detail.module').then( m => m.NewsDetailPageModule)
   }
 
 

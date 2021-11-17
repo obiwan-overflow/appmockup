@@ -35,7 +35,14 @@ ion-content,ion-title {
 ion-label {
     font-family:sarabun !important;
 }
-
+ion-list {
+    ion-item {
+        font-family: sarabun !important;
+    }
+}
+ion-label {
+    font-family: sarabun !important;
+}
 .ion-color-theme {
     --ion-color-base: var(--ion-color-theme);
     --ion-color-base-rgb: var(--ion-color-theme-rgb);
