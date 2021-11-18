@@ -44,8 +44,12 @@ const routes: Routes = [
         loadChildren: () => import('../form/form.module').then(m => m.FormPageModule)
       },
       {
-        path: 'form/form-step1',
+        path: 'form-lists/form-step1',
         loadChildren: () => import('../form-step1/form-step1.module').then(m => m.FormStep1PageModule)
+      },
+      {
+        path: 'form-lists/form-step1/form-step2',
+        loadChildren: () => import('../form-step2/form-step2.module').then(m => m.FormStep2PageModule)
       },
       {
         path: 'why',
@@ -79,8 +83,12 @@ const routes: Routes = [
     ]
   },
   {
+    path: 'home-new',
+    loadChildren: () => import('../home-new/home-new.module').then(m => m.HomeNewPageModule)
+  },
+  {
     path: '',
-    redirectTo: '/tabs/announce',
+    redirectTo: 'home-new',
     pathMatch: 'full'
   }
 ];

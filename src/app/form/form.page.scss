@@ -36,18 +36,20 @@ ion-label {
 
 // new
 .card-lists-form {
-    background-color: #5c2d90;
-    color: #fff;
-    padding: 10px 0;
-    border-left: 5px outset #cab1e7;
+    // background-color: #5c2d90;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 5px 0;
+    margin-top: 20px;
     ion-icon {
-        font-size: 55px;
+        font-size: 60px;
+        margin-top: -30px;
     }
     .lists-content {
+        padding-left: 10px;
         h3 {
             margin-top: 0;
-            margin-bottom: 5px;
-            font-size: 20px;
+            font-size: 19px;
         }
         p {
             margin-top: 0;

@@ -69,10 +69,15 @@ const routes: Routes = [
   {
     path: 'news-detail',
     loadChildren: () => import('./news-detail/news-detail.module').then( m => m.NewsDetailPageModule)
-  },  {
+  },
+  {
     path: 'contact',
     loadChildren: () => import('./contact/contact.module').then( m => m.ContactPageModule)
+  },  {
+    path: 'form-step2',
+    loadChildren: () => import('./form-step2/form-step2.module').then( m => m.FormStep2PageModule)
   }
+
 
 
 
