@@ -76,6 +76,10 @@ const routes: Routes = [
   },  {
     path: 'form-step2',
     loadChildren: () => import('./form-step2/form-step2.module').then( m => m.FormStep2PageModule)
+  },
+  {
+    path: 'form-success',
+    loadChildren: () => import('./form-success/form-success.module').then( m => m.FormSuccessPageModule)
   }
 
 

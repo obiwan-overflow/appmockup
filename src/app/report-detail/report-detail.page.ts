@@ -1,5 +1,6 @@
 import { Component, OnInit, ElementRef, ViewChild } from '@angular/core';
-import { Chart } from 'chart.js';
+import { Chart, registerables  } from 'chart.js';
+Chart.register(...registerables);
 
 @Component({
   selector: 'app-report-detail',
@@ -20,7 +21,7 @@ export class ReportDetailPage implements OnInit {
     this.doughnutChartMethod();
   }
 
-  async doughnutChartMethod() {
+  doughnutChartMethod() {
     this.doughnutChart = new Chart(this.doughnutCanvas.nativeElement, {
       type: 'doughnut',
       data: {
